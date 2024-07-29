@@ -1,0 +1,4 @@
+/Users/geniusbar/desktop/csc582-asg1/build/CMakeFiles/FourBitAdder.dir
+/Users/geniusbar/desktop/csc582-asg1/build/CMakeFiles/test.dir
+/Users/geniusbar/desktop/csc582-asg1/build/CMakeFiles/edit_cache.dir
+/Users/geniusbar/desktop/csc582-asg1/build/CMakeFiles/rebuild_cache.dir
