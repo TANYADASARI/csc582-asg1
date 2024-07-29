@@ -1,46 +1,62 @@
-csc582-asg1/
-├── CMakeLists.txt
-├── include/
-│ ├── ANDGate.h
-│ ├── ORGate.h
-│ ├── NANDGate.h
-│ ├── NOTGate.h
-│ ├── HalfAdder.h
-│ ├── FullAdder.h
-│ └── FourBitAdder.h
-├── src/
-│ ├── ANDGate.cpp
-│ ├── ORGate.cpp
-│ ├── NANDGate.cpp
-│ ├── NOTGate.cpp
-│ ├── HalfAdder.cpp
-│ ├── FullAdder.cpp
-│ └── FourBitAdder.cpp
-├── tests/
-│ └── FourBitAdderTest.cpp
-└── Doxyfile
 
+# CSC582 Assignment #1 Submission
 
-## Prerequisites
+**Student Name:** Tanya Dasari  
+**Student ID:** 211890369  
+**Email:** tdasari1@toromail.csudh.edu
 
-Ensure you have the following tools installed:
+## GitHub Repository Link
+[https://github.com/TANYADASARI/csc582-asg1](https://github.com/TANYADASARI/csc582-asg1)
 
-- CMake (version 3.10 or higher)
-- Google Test
-- A C++ compiler (such as g++, clang++, etc.)
+## Compilation Instructions
+Navigate to the project directory:
 
-## Setup Instructions
+cd ~/desktop/csc582-asg1
 
-### 1. Navigate to the Project Root and Clean the Build Directory
+Clean any previous builds and create a new build directory:
 
-
-cd ~/desktop/csc582-asg1   # Navigate to your project root directory
-rm -rf build               # Remove any existing build directory
-mkdir build                # Create a new build directory
-cd build                   # Navigate into the build directory
+rm -rf build
+mkdir build
+cd build
+Run CMake to configure the project:
 
 cmake ..
-make
+Build the project:
 
-#Run the Tests
+make
+Execution Instructions
+
+After building the project, execute the main program:
+
 ./FourBitAdder
+Running Tests
+
+To run the unit tests, use the following command:
+
+./FourBitAdder
+
+Doxygen Documentation
+
+Generate the Doxygen documentation (if not already done):
+
+
+doxygen Doxyfile
+
+The documentation will be generated in the docs directory. Open docs/html/index.html to view the documentation.
+Additional Notes
+
+Ensure that all dependencies (such as Google Test and CMake) are installed and properly configured. The project follows Hungarian notation for variable names. The code has been formatted using astyle. Comprehensive truth-table unit tests have been implemented using Google Test.
+
+Commit History
+
+Initial commit: Added initial files and structure
+Implemented AND gate logic
+Implemented OR gate logic
+Implemented NAND gate logic
+Implemented NOT gate logic
+Implemented Half Adder logic
+Implemented Full Adder logic
+Implemented Four Bit Adder logic
+Added Google Test for all gates and adders
+Generated Doxygen documentation
+Added one more commit for completeness
